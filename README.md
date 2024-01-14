@@ -47,7 +47,7 @@ Webでは、クライアントコンピュータのブラウザから送信さ�
 |DELETE|リソース情報を削除する。|
 
 # リクエストヘッダーとは
-HTTPリクエストヘッダーとは、Webコンテンツの伝送に用いられるHTTPで、クライアントからサーバへの要求であるHTTPリクエストの前半にある**制御情報を記した領域**のこと。  
+HTTPリクエストヘッダーとは、Webコンテンツの伝送に用いられるHTTPで、クライアントからサーバへの要求である**HTTPリクエストの前半にある制御情報を記した領域**のこと。  
 例えばUser-Agent、Referer、Cookieなどがある。
 
 ### リクエストでよく使われるヘッダーフィールド
@@ -90,6 +90,33 @@ HTTPリクエストヘッダーとは、Webコンテンツの伝送に用いら�
 |500|Internal Server Error【サーバーエラー】。サーバー内部エラー。|
 
 # レスポンスヘッダーとは
+HTTPレスポンスヘッダ（HTTP response header）とは、Webコンテンツの伝送に用いられるHTTPで、サーバからクライアントへの応答である**HTTPレスポンスの前半にある制御情報を記した領域**のこと。  
+例えばServer、Set-Cookie、Content-Typeなど。
+
+### レスポンスでよく使われるヘッダーフィールド
+|フィールド名|意味|
+|:---:|:---|
+|Accept-Ranges|範囲として指定可能な単位|
+|Allow|受理可能なメソッド|
+|Cache-Control|キャッシュに対する制御情報|
+|Connection|接続状態に関する通知(リクエスト処理後は即座に切断など)|
+|Content-Encoding|内容のエンコーディング|
+|Content-Language|内容の言語|
+|Content-Length|内容のサイズ|
+|Content-Type|内容のメディアタイプ(形式)|
+|Date|生成した日時|
+|ETag|内容を要約する情報(この変化により更新がわかる)|
+|Expires|内容を古いと見なせる日時|
+|Last-Modified|内容の最終更新日時|
+|Retry-After|再リクエストまでの時間の要請|
+|Server|サーバープログラムの名称やバージョン|
+|Set-Cookie|保存すべきCookie情報|
+|Transfer-Encoding|内容の転送に使用する形式(チャンク形式、圧縮形式など)
+|Vary|レスポンス生成に影響を及ぼした可能性のあるヘッダー
+|WWW-Authenticate|認証に関する基本情報(要求する認証の種類、領域名)
+
+
+参考:[完全解説：HTTPヘッダーとは？それを確認する方法を紹介](https://apidog.com/jp/blog/how-to-check-http-headers/)
 
 # レスポンスボディとは
 

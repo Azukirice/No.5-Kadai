@@ -124,6 +124,9 @@ HTTPレスポンスヘッダ（HTTP response header）とは、Webコンテン�
 参考:[完全解説：HTTPヘッダーとは？それを確認する方法を紹介](https://apidog.com/jp/blog/how-to-check-http-headers/)
 
 # レスポンスボディとは
+レスポンスボディは、`Webサーバーからブラウザに返される実際のレスポンスデータのことです。`  
+レスポンスボディには、**HTML文書**や**CSS**、**JavaScript**などのデータが含まれます。  
+たとえばWebサイトにアクセスした場合、HTMLの内容がレスポンスボディとして返される。
 
 # JSONとは
 

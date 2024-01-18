@@ -162,8 +162,8 @@ HTTPレスポンスヘッダ（HTTP response header）とは、Webコンテン�
 たとえばWebサイトにアクセスした場合、HTMLの内容がレスポンスボディとして返される。
 
 # JSONとは
-JSONとは**JavaScript Object Notation**の略で、JavaScriptというプログラミング言語におけるオブジェクトの書き方を参考に作られた`データフォーマット(データの記述形式)のこと`です。
-JSONはもともとJavaScriptで使用することを想定して開発されました。しかし、人間とコンピューターの双方にとって可読性が高く、データが重くなりづらいという優れた特徴を持つため、現在はJavaScriptに限らずPythonなど多様な言語で用いられています。  
+JSONとは**JavaScript Object Notation**の略で、JavaScriptというプログラミング言語におけるオブジェクトの書き方を参考に作られた`データフォーマット(データの記述形式)のこと`。
+JSONはもともとJavaScriptで使用することを想定して開発されたが、人間とコンピューターの双方にとって可読性が高く、データが重くなりづらいという優れた特徴を持つため、現在はJavaScriptに限らずPythonなど多様な言語で用いられている。  
 
 JSONの主な用途
 1. データ保存用の形式
@@ -180,4 +180,21 @@ JSONの主な用途
 # JSONを使ってなにかのデータを表現してください
 たとえば、ユーザー情報や商品情報など
 ```json
+{
+  "reelList":[
+    {
+      "name":"STELLA_SW",
+      "model":"18000HG",
+      "gearRatio":"5.7",
+      "maxDrag":"28",
+      "weight":"875"
+    },{
+      "name":"STELLA_SW",
+      "model":"20000PG",
+      "gearRatio":"4.4",
+      "maxDrag":"28",
+      "weight":"885"
+    }
+  ]
+}
 ```
